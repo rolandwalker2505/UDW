@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập 8</title>
+    <style>
+        table {
+            width: 60%;
+        }
+
+        table, th, td {
+            background-color: yellow;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div align="center">
+        <h2>BÀI KIỂM TRA CHƯƠNG 2</h2>
+
+        <p>
+            <b>Môn học:</b> <i>Mạng máy tính</i><br>
+            <b>Mã số sinh viên</b> <i>2354050055</i><br>
+            <b>Họ và tên:</b> <i>Trần Đăng Khoa</i>
+        </p>
+
+        <hr color="blue">
+    </div>
+
+    <div align="center">
+        <a href="bt08-index.html">Trang chủ</a>
+        <a href="bt08-content.html">Nội dung môn học</a>
+        <a href="bt08-register.html">Đăng ký</a>
+    </div>
+
+    <div align="center">
+        <h3>ĐĂNG KÝ THAM GIA DIỄN ĐÀN</h3>
+        <form>
+            <table>
+                <tbody>
+                    <tr>
+                        <td><label for="ten" >Tên đăng nhập:</label></td>
+                        <td><input type="text" name="ten" placeholder="Nhập tên đăng nhập" id="ten" required></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><label for="matkhau">Mật khẩu:</label></td>
+                        <td><input type="password" name="matkhau" required></td>
+                    </tr>
+
+                    <tr>
+                        <td>Giới tính</td>
+                        <td>
+                            <input type="radio" name="rdGioiTinh" value="Nam"/>
+                            <label for="Nam">Nam</label>
+                            <input type="radio" name="rdGioiTinh" value="Nu"/>
+                            <label for="Nu">Nữ</label>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Ngày sinh</td>
+                        <td><input type="date" id="birthday" name="birthday"></td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="email" >Email:</label></td>
+                        <td><input type="email" name="email" required></td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="program" >Ngôn ngữ lập trình yêu thích nhất</label></td>
+                        <td>
+                            <select name="program">
+                                <option value="C++">C++</option>
+                                <option value="C#">C#</option>
+                                <option value="PHP">PHP</option>
+                                <option value="Java">Java</option>
+                                <option value=""Python>Python</option>
+                            </select>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="rule" >Quy định khi tham gia diễn đàn</label></td>
+                        <td>
+                            <textarea id="rule" name="rule" rows="4" cols="30">Bài viết phải nghiêm túc, không chứa quảng cáo, không có nội dung phản cảm</textarea>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td></td>
+                        <td>
+                            <input type="submit" value="Đăng Ký">
+                            <input type="reset" value="Hủy">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+    </div>
+
+    <hr>
+    <a href="web.html">Về danh sách bài tập</a>
+</body>
+</html>

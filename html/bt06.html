@@ -1,26 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bài tập 6</title>
-</head>
-<body>
-    <h4 style="text-align: center;">Audio Player</h4>
-    <div style="display: flex; justify-content: center; align-items: center;"></div>
-        <audio controls>
-            <source src="../audio/audio.m4a" type="audio/mp4">
-        </audio>
-    </div>
-    
-    <h4 style="text-align: center;">Video Player</h4>
-    <div style="display: flex; justify-content: center; align-items: center;">
-        <video src="../videos/video.mp4" controls width="600"></video>
-    </div>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bài tập 6</title>
+    </head>
+    <body align="center">
+        <div>
+            <h4>Audio Player</h4>
+            <audio controls loop>
+                <source src="../audio/audio.m4a" type="audio/mp4">
+            </audio>
+        </div>
+        
+        <div>
+            <h4>Video Player</h4>
+            <video loop controls width="600">
+                <source src="../videos/video.mp4">
+            </video>
+        </div>
 
-    <h4 style="text-align: center;">YouTube Player</h4>
-    <div style="display: flex; justify-content: center;">
-        <iframe width="560" height="315" style="align-items: center;" src="https://www.youtube.com/embed/dg4Byky2oLk?si=9QbLKUG1HxUvjKUo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    </div>
-</body>
+        <div>
+            <h4>YouTube Player</h4>
+            <iframe width="560" height="315" style="align-items: center;" src="https://www.youtube.com/embed/dg4Byky2oLk?si=9QbLKUG1HxUvjKUo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div>
+            <h4>Google Maps</h4>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9716.879230566225!2d106.69550109658623!3d10.678947148766163!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31753100099ce9ed%3A0xdb6079801f0735ea!2sCity%20Open%20University.%20Ho%20Chi%20Minh%20(campus%203)!5e0!3m2!1sen!2s!4v1783126772027!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        </div>
+
+        <hr>
+        <a href="web.html">Về danh sách bài tập</a>
+    </body>
 </html>
