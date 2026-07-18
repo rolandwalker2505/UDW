@@ -1,0 +1,164 @@
+/* h1 {
+    background-color: red;
+    font-size: 20px;
+    padding: 5%;
+    margin: 0%;
+    text-align: center;
+    height: 30px;
+
+    animation: textChange 8s infinite ease-in-out;
+}
+
+@keyframes textChange {
+    0%   { 
+        background-color: #2d3436; 
+        font-size: 20px;
+    }
+    33%  { 
+        background-color: #e309a9; 
+        font-size: 30px;
+    }
+    66%  { 
+        background-color: #5ce77c; 
+        font-size: 25px;
+    }
+    100% { 
+        background-color: #2d3436; 
+        font-size: 20px;
+    }
+}
+
+h4 {
+    background-color: aqua;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+} */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Tahoma;
+}
+
+.container {
+    width: 900px;
+    margin: 30px auto;
+    border: 1px solid royalblue;
+    padding: 8px;
+}
+
+
+/* BANNER */
+.banner {
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: bannerColor 4s infinite alternate;
+}
+
+.banner h2 {
+    animation: bannerText 2s infinite alternate;
+    color: white;
+}
+
+
+/* Content */
+
+.content {
+    display: flex;
+    justify-content: space-around;
+    margin: 35px 0 50px;
+}
+
+.box {
+    display: flex;
+    width: 140px;
+    height: 140px;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    color: yellow;
+}
+
+.box1 {
+    border: 3px solid red;
+    background-size: cover;
+    background-position: center;
+    animation: changeBg 6s infinite;
+}
+
+.box2 {
+    background: #00e1ff;
+    border: 3px dashed blue;
+    border-radius: 0 25px;
+}
+
+.box3 {
+    background: #00e1ff;
+    border: 3px dotted rgb(255, 82, 220);
+    border-radius: 25px 0;
+}
+
+.box4 {
+    background: rgb(31, 95, 31);
+    border: 3px solid yellow;
+    animation: rotateBox 4s linear infinite;
+}
+
+/* Animation */
+@keyframes bannerColor {
+    0% {
+        background-color: #f00; 
+        /* font-size: 20px; */
+    }
+
+    50% {
+        background-color: #0f0; 
+        /* font-size: 20px; */
+    }
+
+    100% {
+        background-color: #00f; 
+        /* font-size: 20px; */
+    }
+}
+
+@keyframes bannerText {
+    from {
+        font-size: 18px;
+    } to {
+        font-size: 36px;
+    }
+}
+
+@keyframes changeBg {
+    0% {
+        background-image: url('/images/badminton.jpg');
+    }
+
+    33% {
+        background-image: url('/images/cat.jpg');
+    }
+
+    66% {
+        background-image: url('/images/fight.jpg');
+    }
+
+    100% {
+        background-image: url('/images/golf.jpg');
+    }
+}
+
+@keyframes rotateBox {
+    from {
+        transform: rotate(0deg);
+    } to {
+        transform: rotate(360deg);
+    }
+}

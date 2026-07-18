@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>CSS01</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .header {
+            text-shadow: 5px 10px 5px rgb(181, 181, 181);
+        }
+
+        .bold-first-line::first-line {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="header">Dòng này được định dạng có bóng (shadow)</h1>
+    <div>
+        <p>Văn bản bình thường</p>
+        <p style="text-transform: capitalize; text-align: center;">Hoa các ký tự đầu từ</p>
+        <p style="text-transform: uppercase; text-align: right;">Hoa tất cả các ký tự</p>
+        <p style="text-transform: lowercase;">Đoạn này sẽ được chuyển về chữ thường</p>
+    </div>
+    <div class="bold-first-line">
+        <span style="font-size: 32px;">Đ</span>oạn văn bản này có ký tự đầu được định dạng font-size lớn, dòng đầu tiên được in đậm
+    </div>
+
+</body>
+</html>
